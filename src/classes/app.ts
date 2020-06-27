@@ -1,17 +1,8 @@
 import Pages from './pages';
+import NavigationBar from '../components/navigation-bar';
 
 // App connector
 export default class App {
-  private static nav() {
-  	const nav = document.createElement('nav');
-  	const homeLink = document.createElement('button');
-  	homeLink.innerText = 'Home';
-  	homeLink.addEventListener('click', () => {
-  		Pages.setCurrentPage(Pages.pages[1]);
-  	});
-  	nav.appendChild(homeLink);
-  	return nav;
-  }
 
   static async render() {
 		const app: HTMLElement = document.getElementById('app')!;
@@ -23,7 +14,7 @@ export default class App {
 
     if (app) {
 			app.innerHTML = '';
-			app.appendChild(this.nav());
+			app.appendChild(new NavigationBar().render());
 			app.appendChild(pageContent);
     } else {
       throw new Error('App div not found');

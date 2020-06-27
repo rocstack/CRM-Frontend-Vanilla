@@ -1,5 +1,14 @@
 nav {
+	margin-bottom: 10px;
+
 	button {
+		padding: 5px 10px;
+		margin-right: 10px;
 		cursor: pointer;
 	}
+}
+
+.container {
+	border-top: 1px black solid;
+	padding-top: 10px;
 }

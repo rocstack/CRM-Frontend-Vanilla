@@ -1,7 +1,6 @@
 import axios from 'axios';
 import App from './classes/app';
 
-
 // interface User {
 // 	message: string;
 // 	user: object;
@@ -26,8 +25,6 @@ import App from './classes/app';
 class Navigation {
 
 }
-
-
 
 // Run app
 try {
