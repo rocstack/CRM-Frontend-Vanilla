@@ -12,16 +12,22 @@ export default class NavigationBar implements Component {
 		
 		const homeButton = new Button('Home').render();
 		homeButton.addEventListener('click', () => {
-			Pages.setCurrentPage(Pages.pages[0]);
+			Pages.setCurrentPage(0);
 		});
 
 		const aboutButton = new Button('About').render();
 		aboutButton.addEventListener('click', () => {
-			Pages.setCurrentPage(Pages.pages[1]);
+			Pages.setCurrentPage(1);
+		});
+
+		const addUserButton = new Button('Add Page').render();
+		addUserButton.addEventListener('click', () => {
+			Pages.setCurrentPage(2);
 		});
 
 		nav.appendChild(homeButton);
 		nav.appendChild(aboutButton);
+		nav.appendChild(addUserButton);
     return nav;
   }
 }

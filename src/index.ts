@@ -22,10 +22,6 @@ import App from './classes/app';
 // 	}
 // };
 
-class Navigation {
-
-}
-
 // Run app
 try {
   App.render();

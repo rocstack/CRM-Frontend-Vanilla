@@ -14,7 +14,7 @@ export default class App {
 
     if (app) {
 			app.innerHTML = '';
-			app.appendChild(new NavigationBar().render());
+      app.appendChild(new NavigationBar().render());
 			app.appendChild(pageContent);
     } else {
       throw new Error('App div not found');
