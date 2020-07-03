@@ -3,7 +3,7 @@ import { Component } from '../util/types';
 export default class TextInput implements Component {
   public name: string = 'Text Input';
 	public id: string;
-	public type: string;
+	public type: string = 'text';
 
   constructor(id: string, type: string) {
 		this.id = id;

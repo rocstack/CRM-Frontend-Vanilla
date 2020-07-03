@@ -6,7 +6,7 @@ const page: Page = {
   render() {
 		const content = document.createElement('div');
 		content.className = 'container';
-    content.innerText = 'This is the home page.';
+    content.innerText = 'This is the home page. asd';
 
     return content;
   },
